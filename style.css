@@ -1,0 +1,159 @@
+html{
+	background: #A67B77;
+}
+
+body {
+	font-family: 'Architects Daughter', cursive, sans-serif; /*Aplica a familia de fonte a todo o conteúdo e cria a alternativa sans-serif caso não dê certo*/
+}
+
+main{
+	width: 940px;
+	margin: 0 auto 0 auto;
+	background: linear-gradient(#590209, #260205);
+	padding-bottom: 50px;
+}
+
+.cabecalho{
+	background-color: #400207;
+	height: 110px;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+
+}
+
+nav{
+	position: absolute; /**Agora o elemento nav pode ter sua posição alterada**/
+	top: 20px; /**zero em relação ao top coladinho ao topo **/
+	right: 20px;
+}
+
+nav a{
+	color: #FEFEFE;
+	font-weight: bold; /**Peso da fonte em negrito**/
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover { /**quando o mouse estiver por cima do obejeto nav a, ou seja, os links Home, produtos, contato**/
+	color:	#868C5A ;
+	text-decoration: underline; /**sublinha o texto como se fosse um link**/
+}
+
+.img_logo{
+	width: 100px;
+	border: 3px #868C5A solid;
+	border-radius: 55px;
+	opacity: 1;
+ 	transition: 500ms;
+}
+
+.img_logo:hover{
+	opacity: 0.7;
+}
+
+.nome_artista{
+	text-align: center;
+	font-size: 4em;
+	color: #fefefe;
+
+}
+
+.nome_artista:before{
+	content: "♠ ";
+}
+
+.nome_artista:after{
+	content: " ♠";
+}
+
+.img_perfil{
+	float: left;
+	width: 250px;
+	box-shadow: 10px 10px 5px #868C5A;
+	margin: 0 15px 5px 10px;
+	border-radius: 12px;
+	opacity: 1;
+	transition: 500ms;
+}
+
+.img_perfil:hover {
+	opacity: 0.7;
+	box-shadow: 15px 15px 7px #868C5A;
+}
+
+.texto_artista{
+	font-size: 2em;
+	color: #A67B77;
+	text-align: justify;
+	margin: 0 1em 0 1em;
+	line-height: 1.2;
+	
+}
+
+.spotify {
+	/*display: inline;*/
+	clear: left;
+	margin: 3em auto 2em auto;
+	width: 800px;
+	height: 400px;
+	display: block;
+	border: 2px #868C5A solid;
+}
+.instagram{
+	/*display: inline;*/
+	margin: 3em auto 0 auto;
+	width: 800px;
+	height: 400px;
+	display: block;
+	border: 2px #868C5A solid;
+	border-radius: 12px;
+}
+
+footer {
+	padding-top: 10px;
+	background: #400207;
+	height: 55px;
+	color: #FEFEFE;
+	text-align: center;
+	font-size: 1.5em;
+} 
+
+@media screen and (max-width: 480px){ /*Para Celulares*/
+	.cabecalho, .spotify, .instagram {
+		width: auto;
+	}
+	nav{
+		position: static;
+	}
+	.cabecalho{
+		height: auto;
+		display: block;
+	}
+
+	html, main {
+		font-size: 0.75em;
+		width: auto;
+	}
+	footer {
+		font-size: 1em; 
+		width: auto;
+	}
+
+	.img_perfil {
+		width: 50%;
+		box-shadow: none;
+
+	}
+
+
+}
+
+/*Palheta de cores
+.Anima-1-hex { color: #590209; }
+.Anima-2-hex { color: #400207; }
+.Anima-3-hex { color: #260205; }
+.Anima-4-hex { color: #868C5A; }
+.Anima-5-hex { color: #A67B77; }
+*/
